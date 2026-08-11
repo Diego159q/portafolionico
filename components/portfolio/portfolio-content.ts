@@ -51,9 +51,9 @@ export interface PortfolioContent {
 /** Filtros mostrados. "all" agrupa la vista completa. */
 export const PORTFOLIO_FILTERS: PortfolioFilter[] = [
   { id: "all", label: "Todos" },
-  { id: "architecture", label: "Arquitectura" },
+  { id: "architecture", label: "Ficción" },
   { id: "digital", label: "Digital" },
-  { id: "branding", label: "Marca" },
+  { id: "branding", label: "Comercial" },
 ];
 
 export const PORTFOLIO_CONTENT: PortfolioContent = {
@@ -62,29 +62,29 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
   filters: PORTFOLIO_FILTERS,
   projects: [
     {
-      id: "void-structure-01",
-      slug: "void-structure-01",
-      title: "VOID_STRUCTURE_01",
-      category: "architecture",
+      id: "short-film-01",
+      slug: "short-film-01",
+      title: "LUMEN_01",
+      category: "digital",
       year: 2024,
       description:
-        "Una exploración del espacio negativo en entornos urbanos de alta densidad. El hormigón y la luz actuando como materiales primarios.",
+        "Cortometraje de ficción: luz y encuadre como material narrativo. Dirección de fotografía y montaje de una historia minimalista.",
       image: "/images/portfolio/void-structure.jpg",
-      caseStudySlug: "kinetic",
+      caseStudySlug: "lumen-01",
       size: "large",
-      technologies: ["Rhino", "V-Ray", "Blender"],
+      technologies: ["Sony Cinema", "DaVinci Resolve", "Premiere"],
     },
     {
-      id: "data-flow-ui",
-      slug: "data-flow-ui",
-      title: "DATA_FLOW_UI",
+      id: "music-video-01",
+      slug: "music-video-01",
+      title: "SIGNAL_04",
       category: "digital",
       year: 2023,
       description:
-        "Interfaz de trading de alta frecuencia diseñada para priorizar la legibilidad inmediata de los datos sobre el embellecimiento estético.",
+        "Videoclip de alta energía: ritmo de corte, color radical y motion graphics integrados en la imagen.",
       image: "/images/portfolio/data-flow.jpg",
       size: "small",
-      technologies: ["React", "TypeScript", "Figma", "D3"],
+      technologies: ["After Effects", "DaVinci Resolve"],
     },
   ],
   ctaLarge: "Ver Proyecto",
@@ -92,7 +92,7 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
 };
 
 export const CATEGORY_LABELS: Record<ProjectCategory, string> = {
-  architecture: "Arquitectura",
+  architecture: "Ficción",
   digital: "Digital",
-  branding: "Marca",
+  branding: "Comercial",
 };

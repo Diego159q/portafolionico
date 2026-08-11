@@ -5,6 +5,9 @@
  */
 import type { NavItem } from "@/components/layout/TopNav";
 
+/** Marca mostrada en el TopNav (logo texto). */
+export const BRAND = "NICO";
+
 export interface NavigationEntry {
   /** Etiqueta del ítem (en mayúsculas en el render). */
   label: string;

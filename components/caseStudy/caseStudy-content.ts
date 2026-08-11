@@ -92,89 +92,89 @@ export interface CaseStudy {
 }
 
 /** Lista y orden de slugs disponibles (permite enumerar proyectos). */
-export const CASE_STUDIES_INDEX: string[] = ["kinetic"];
+export const CASE_STUDIES_INDEX: string[] = ["lumen-01"];
 
-const kinetic = {
-  id: "kinetic",
-  slug: "kinetic",
+const lumen = {
+  id: "lumen-01",
+  slug: "lumen-01",
   category: "architecture",
   year: 2024,
   featured: true,
-  technologies: ["Spatial UX", "Three.js", "WebGL", "React", "Tailwind"],
-  repository: "https://github.com/kenji-sato/kinetic",
-  demoUrl: "https://kinetic.kenjisato.dev",
-  projectTitle: "KINETIC",
-  client: "Cliente: Kurokawa Industries",
+  technologies: ["Sony Cinema", "DaVinci Resolve", "Premiere Pro", "Lighting"],
+  repository: "https://github.com/nico-audiovisual/lumen",
+  demoUrl: "https://vimeo.com/lumen01",
+  projectTitle: "LUMEN_01",
+  client: "Cliente: Productora Placeholder",
   tagline:
-    "Una exploración definitiva de interfaces de computación espacial aplicadas a entornos arquitectónicos brutalistas.",
+    "Un cortometraje de ficción donde la luz y el encuadre actúan como materiales narrativos primarios.",
   heroImage: {
     src: "/images/case-study/hero-brutalist.jpg",
-    alt: "Interior brutalista en alto contraste — luz atravesando geometrías",
+    alt: "Escena en alto contraste — luz atravesando geometrías",
     treatment: "grayscale",
     height: "90vh",
   },
   roles: [
-    { label: "Disciplina", values: ["UX / UI Espacial", "Dirección Creativa"] },
-    { label: "Tecnología", values: ["WebGL / Three.js", "React / Tailwind"] },
+    { label: "Disciplina", values: ["Dirección de Fotografía", "Edición"] },
+    { label: "Equipo", values: ["Cámara Sony", "Iluminación"] },
     { label: "Cronología", values: ["2023 T4 - 2024 T1"] },
-    { label: "Estado", values: ["Desplegado"] },
+    { label: "Estado", values: ["Estrenado"] },
   ],
-  editorialHeading: "El Vacío como Estructura",
+  editorialHeading: "La Luz como Estructura",
   editorialParagraphs: [
-    "La filosofía central del Proyecto Kinetic fue tratar el espacio negativo no como una ausencia, sino como un elemento estructural primario. Partiendo en profundidad del concepto de Ma, diseñamos una interfaz que respira, permitiendo que los datos espaciales complejos existan sin abrumar al usuario.",
-    "Al adherirse estrictamente a una paleta monocromática puntuada solo por intensos destellos de 'Cyber Crimson' para las interacciones críticas, el ruido visual se redujo a cero. La interfaz resultante se siente menos como software y más como una extensión física de la arquitectura brutalista que habita.",
+    "La filosofía central del proyecto fue tratar la luz no como una simple iluminación, sino como un elemento estructural primario. Partiendo del concepto de vacío escénico, construimos una imagen que respira y deja que la emoción exista sin saturar al espectador.",
+    "Manteniendo una paleta monocromática puntuada solo por el calor del atardecer, el ruido visual se redujo al mínimo. El resultado se siente menos como una pieza producida y más como una extensión física del espacio que habita.",
   ],
   quote: "La precisión en la ejecución exige la eliminación despiadada de lo no esencial.",
-  processHeading: "01 // PROCESO Y PROTOTIPOS",
+  processHeading: "01 // PROCESO Y STORYBOARD",
   figures: [
     {
       src: "/images/case-study/fig-wireframes.jpg",
-      alt: "Wireframes de la interfaz sobre plano arquitectónico",
-      caption: "FIG. 1 / WIREFRAMES",
+      alt: "Storyboard de los planos principales sobre esquema de luces",
+      caption: "FIG. 1 / STORYBOARD",
     },
     {
       src: "/images/case-study/fig-volumes.jpg",
-      alt: "Modelo físico en hormigón y resina negra",
-      caption: "FIG. 2 / VOLÚMENES",
+      alt: "Croquis de volumen y encuadre de la locación",
+      caption: "FIG. 2 / ENCUADRES",
     },
     {
       src: "/images/case-study/fig-logic.jpg",
-      alt: "Captura de código fuente en editor minimalista",
-      caption: "FIG. 3 / LÓGICA",
+      alt: "Línea de tiempo de edición en software minimalista",
+      caption: "FIG. 3 / MONTAJE",
     },
   ],
-  videoHeading: "02 // ESTUDIO DE INTERACCIÓN",
-  videoLabel: "REC_01_KINETIC",
+  videoHeading: "02 // ESTUDIO DE IMAGEN",
+  videoLabel: "REC_01_LUMEN",
   metricsTitle: "MÉTRICAS DE IMPACTO",
   metricsIntro:
-    "Mejoras de rendimiento cuantificables tras la integración del sistema espacial Kinetic.",
+    "Resultados de producción y montaje del cortometraje tras su estreno.",
   metrics: [
-    { value: "40%", label: "Reducción de la carga cognitiva", accent: "crimson" },
-    { value: "12ms", label: "Latencia de renderizado", accent: "neutral" },
-    { value: "99.9%", label: "Disponibilidad del sistema", accent: "neutral" },
+    { value: "9", label: "Días de rodaje", accent: "crimson" },
+    { value: "4K", label: "Resolución de imagen", accent: "neutral" },
+    { value: "12", label: "Minutos de duración", accent: "neutral" },
     { value: "0", label: "Elementos superfluos", accent: "crimson" },
   ],
-  finalHeading: "03 // EJECUCIÓN FINAL",
+  finalHeading: "03 // IMÁGENES FINALES",
   finals: [
     {
       src: "/images/case-study/exec-portrait.jpg",
-      alt: "Retrato del diseñador en habitación de hormigón minimalista",
+      alt: "Retrato de la realizadora en locación minimalista",
       treatment: "grayscale",
       height: "80vh",
     },
     {
       src: "/images/case-study/exec-interface.jpg",
-      alt: "Interfaz digital proyectada sobre muro de hormigón",
+      alt: "Imagen del cortometraje proyectada sobre un muro",
       treatment: "color",
       height: "80vh",
     },
   ],
-  next: { title: "OBLIVION", slug: "oblivion" },
+  next: { title: "SIGNAL_04", slug: "signal-04" },
 } satisfies CaseStudy;
 
 /** Base de datos local de case studies (equivalente a una API determinística). */
 export const caseStudies: Record<string, CaseStudy> = {
-  [kinetic.id]: kinetic,
+  [lumen.id]: lumen,
 };
 
 /** Acceso tipado e idempotente (proxy del backend). */

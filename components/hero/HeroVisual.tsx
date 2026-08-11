@@ -3,9 +3,7 @@
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { EASE } from "@/components/ui/motion";
-
-/** Ruta del retrato real (retrato de Stitch en /public/images/profile). */
-const PORTRAIT_SRC = "/images/profile/hero-portrait.jpg";
+import { HERO_CONTENT } from "./hero-content";
 
 /**
  * Columna derecha del Hero: retrato + overlays glass + acento crimson.
@@ -24,8 +22,8 @@ export function HeroVisual() {
         transition={{ duration: 1.1, ease: EASE, delay: 0.2 }}
       >
         <Image
-          src={PORTRAIT_SRC}
-          alt="Retrato de Kenji Sato en un ambiente minimalista techno-zen."
+          src={HERO_CONTENT.visual.src}
+          alt={HERO_CONTENT.visual.alt}
           fill
           priority
           sizes="(min-width: 768px) 50vw, 100vw"

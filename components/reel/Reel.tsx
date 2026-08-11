@@ -13,7 +13,7 @@ export function Reel() {
   return (
     <section
       id="reel"
-      aria-label="Reel destacado — Kenji Sato"
+      aria-label="Reel destacado — NICO"
       className="relative bg-background px-margin-mobile pb-section-gap md:px-margin-desktop"
     >
       <div className="grid grid-cols-4 items-center gap-gutter md:grid-cols-12">

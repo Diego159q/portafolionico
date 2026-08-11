@@ -17,26 +17,26 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "KENJI SATO — Portfolio",
+  title: "NICO — Portafolio Audiovisual",
   description:
-    "Equilibrio a través de la innovación digital. Diseñador de Experiencias y Arquitecto Tecnológico.",
+    "Dirección de fotografía, edición y postproducción audiovisual. Narrativa, ritmo y luz.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
-    siteName: "KENJI SATO",
-    title: "KENJI SATO — Portfolio",
+    siteName: "NICO",
+    title: "NICO — Portafolio Audiovisual",
     description:
-      "Equilibrio a través de la innovación digital. Diseñador de Experiencias y Arquitecto Tecnológico.",
+      "Dirección de fotografía, edición y postproducción audiovisual. Narrativa, ritmo y luz.",
     url: SITE_URL,
     images: [
-      { url: "/images/profile/hero-portrait.jpg", width: 1200, height: 630, alt: "Kenji Sato" },
+      { url: "/images/profile/hero-portrait.jpg", width: 1200, height: 630, alt: "NICO — Portafolio Audiovisual" },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KENJI SATO — Portfolio",
+    title: "NICO — Portafolio Audiovisual",
     description:
-      "Equilibrio a través de la innovación digital. Diseñador de Experiencias y Arquitecto Tecnológico.",
+      "Dirección de fotografía, edición y postproducción audiovisual. Narrativa, ritmo y luz.",
     images: ["/images/profile/hero-portrait.jpg"],
   },
 };
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0a0a0a",
+  themeColor: "#131313",
 };
 
 export default function RootLayout({

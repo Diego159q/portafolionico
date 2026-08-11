@@ -24,7 +24,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const study = getCaseStudy(slug);
   if (!study) {
-    return { title: "Proyecto no encontrado — KENJI SATO" };
+    return { title: "Proyecto no encontrado — NICO" };
   }
   return {
     title: `${study.projectTitle} — Caso de Estudio`,

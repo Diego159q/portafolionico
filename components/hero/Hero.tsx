@@ -1,6 +1,7 @@
 import { HeroContent } from "./HeroContent";
 import { HeroVisual } from "./HeroVisual";
 import { HeroDecorators } from "./HeroDecorators";
+import { HERO_CONTENT } from "./hero-content";
 
 /**
  * Hero Section — primera impresión del portafolio.
@@ -11,7 +12,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      aria-label="Introducción — Kenji Sato"
+      aria-label={HERO_CONTENT.ariaLabel}
       className="relative grid grid-cols-4 items-center gap-gutter overflow-hidden bg-background px-margin-mobile pt-[80px] pb-section-gap md:grid-cols-12 md:px-margin-desktop md:pt-[80px] md:pb-0 md:min-h-[100svh]"
     >
       <HeroDecorators />

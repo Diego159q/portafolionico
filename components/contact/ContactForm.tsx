@@ -1,39 +1,37 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useActionState } from "react";
 import { CONTACT_CONTENT } from "./contact-content";
 import { Button } from "@/components/ui/Button";
+import { submitContactForm, type ContactState } from "@/app/actions/contact";
+
+const initialState: ContactState = { ok: false };
 
 /**
- * Formulario de contacto (client component mínimo).
- * Estado local para los campos; preparado para conectarse a un backend
- * cuando exista (p.ej. fetch a una API REST). No envía a ningún servicio.
+ * Formulario de contacto (client component). Envía el mensaje mediante un
+ * Server Action (`app/actions/contact.ts`) que lo inserta en Supabase.
  */
 export function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [sent, setSent] = useState(false);
+  const [state, formAction, isPending] = useActionState(
+    submitContactForm,
+    initialState,
+  );
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // TODO: conectar con backend/CMS (p.ej. POST a una API REST).
-    setSent(true);
-  };
+  const success = state.ok;
 
-  if (sent) {
+  if (success) {
     return (
       <p
         role="status"
         className="border border-on-tertiary-container px-margin-mobile py-margin-mobile font-body text-body-md text-on-tertiary-container"
       >
-        Mensaje recibido. Gracias por escribir.
+        {state.message}
       </p>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-margin-mobile">
+    <form action={formAction} className="flex flex-col gap-margin-mobile">
       <div className="flex flex-col gap-unit">
         <label
           htmlFor="contact-name"
@@ -46,8 +44,6 @@ export function ContactForm() {
           name="name"
           type="text"
           required
-          value={name}
-          onChange={(event) => setName(event.target.value)}
           className="border border-outline-variant bg-surface-container-low px-unit py-3 font-body text-body-md text-on-background outline-none transition-colors focus-visible:border-on-tertiary-container"
           placeholder={CONTACT_CONTENT.form.nameLabel}
         />
@@ -65,8 +61,6 @@ export function ContactForm() {
           name="email"
           type="email"
           required
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
           className="border border-outline-variant bg-surface-container-low px-unit py-3 font-body text-body-md text-on-background outline-none transition-colors focus-visible:border-on-tertiary-container"
           placeholder={CONTACT_CONTENT.form.emailLabel}
         />
@@ -84,17 +78,20 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          value={message}
-          onChange={(event) => setMessage(event.target.value)}
           className="resize-none border border-outline-variant bg-surface-container-low px-unit py-3 font-body text-body-md text-on-background outline-none transition-colors focus-visible:border-on-tertiary-container"
           placeholder={CONTACT_CONTENT.form.messageLabel}
         />
       </div>
 
-      <div>
-        <Button type="submit" variant="secondary" size="lg">
-          {CONTACT_CONTENT.form.submitLabel}
+      <div className="flex flex-col gap-unit">
+        <Button type="submit" variant="secondary" size="lg" disabled={isPending}>
+          {isPending ? "Enviando…" : CONTACT_CONTENT.form.submitLabel}
         </Button>
+        {state.message && !state.ok ? (
+          <p role="alert" className="font-body text-body-md text-on-tertiary-container">
+            {state.message}
+          </p>
+        ) : null}
       </div>
     </form>
   );

@@ -14,7 +14,7 @@ export function Studio() {
   return (
     <section
       id="studio"
-      aria-label="Sobre mí — Kenji Sato"
+      aria-label="Sobre mí — NICO"
       className="relative bg-background px-margin-mobile pb-section-gap md:px-margin-desktop"
     >
       {/* 1. Intro Statement */}

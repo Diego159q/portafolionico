@@ -35,41 +35,41 @@ export interface StudioContent {
 export const STUDIO_CONTENT: StudioContent = {
   eyebrow: "Trayectoria Profesional",
   statement:
-    "Fusionando la precisión arquitectónica con la fluidez digital durante más de una década.",
+    "Cine, edición y dirección de fotografía con sensibilidad narrativa y precisión técnica.",
   quote:
-    "El diseño no es meramente visual; es estructural. El vacío es tan fundamental como la masa. Mi práctica se centra en crear experiencias que perduran, eliminando la fricción para revelar la intención pura.",
+    "La imagen es lenguaje. Cada plano, cada corte y cada luz sostienen el ritmo de la historia. Mi práctica busca eliminar lo superfluo para que la intención de cada pieza se revele con claridad.",
   disciplinesTitle: "Disciplinas Principales",
   valuesLabel: "Valores",
   specialties: {
     label: "Especialidades",
     arrow: true,
     items: [
-      "Diseño de Experiencias",
-      "Arquitectura Técnica",
-      "Estrategia Digital",
+      "Dirección de Fotografía",
+      "Edición y Montaje",
+      "Producción Audiovisual",
     ],
   },
   skills: {
     label: "Habilidades",
     items: [
-      "UI/UX Moderno",
-      "Codificación Creativa",
-      "Diseño de Sistemas",
-      "Gráficos en Movimiento",
+      "Etalonaje y Color",
+      "Diseño Sonoro",
+      "Motion Graphics",
+      "Contenido Digital",
     ],
   },
   values: [
-    { index: "01", label: "Precisión" },
+    { index: "01", label: "Ritmo" },
     { index: "02", label: "Intencionalidad" },
     { index: "03", label: "Silencio" },
-    { index: "04", label: "Innovación" },
+    { index: "04", label: "Precisión" },
   ],
 };
 
 /** Imagen del estudio (descargada de Stitch, /public/images/studio). */
 export const STUDIO_IMAGE = {
   src: "/images/studio/studio-workspace.jpg",
-  alt: "Estudio de trabajo arquitectónico en blanco y negro, estilo techno-zen.",
+  alt: "Estudio de trabajo en blanco y negro, estilo techno-zen, con equipos de postproducción.",
   /** Width/height del asset original (1408x768), para next/image. */
   width: 1408,
   height: 768,

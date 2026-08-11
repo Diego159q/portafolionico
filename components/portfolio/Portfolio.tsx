@@ -2,7 +2,7 @@ import { PortfolioGrid } from "./PortfolioGrid";
 
 /**
  * Portfolio (Galería) — grid asimétrico de proyectos con filtros.
- * Presenta el portafolio de Kenji Sato bajo el design system Techno-Zen.
+ * Presenta el portafolio audiovisual bajo el design system Techno-Zen.
  */
 export function Portfolio() {
   return (

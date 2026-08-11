@@ -1,6 +1,7 @@
 import { HeroEyebrow } from "./HeroEyebrow";
 import { HeroTitle } from "./HeroTitle";
 import { HeroCTA } from "./HeroCTA";
+import { HERO_CONTENT } from "./hero-content";
 import { Stagger, Item } from "@/components/ui/motion";
 
 /**
@@ -21,7 +22,7 @@ export function HeroContent() {
 
         <Item className="pt-8">
           <p className="max-w-lg text-quote-text text-on-surface-variant">
-            EQUILIBRIO A TRAVÉS DE LA INNOVACIÓN DIGITAL.
+            {HERO_CONTENT.tagline}
           </p>
         </Item>
 

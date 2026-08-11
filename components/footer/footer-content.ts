@@ -30,7 +30,7 @@ export interface FooterContent {
 }
 
 export const FOOTER_CONTENT: FooterContent = {
-  brand: "Estudio Audiovisual",
+  brand: "NICO",
   nav: [
     { href: "#portfolio", label: "Portfolio" },
     { href: "#studio", label: "Studio" },
@@ -43,8 +43,8 @@ export const FOOTER_CONTENT: FooterContent = {
     { id: "linkedin", label: "LinkedIn", url: "https://linkedin.com/" },
   ],
   tagline:
-    "Dirección, edición y postproducción audiovisual con foco en el ritmo y la imagen.",
-  copyright: "© 2026 Estudio Audiovisual. Todos los derechos reservados.",
+    "Dirección de fotografía, edición y postproducción audiovisual con foco en el ritmo y la imagen.",
+  copyright: "© 2026 NICO. Todos los derechos reservados.",
   legal: [
     { href: "/legal/privacy", label: "Privacidad" },
     { href: "/legal/terms", label: "Términos" },

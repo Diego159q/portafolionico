@@ -36,45 +36,45 @@ export interface ServicesContent {
 
 export const SERVICES_CONTENT: ServicesContent = {
   eyebrow: "Ofertas",
-  title: "Servicios y Expertise",
+  title: "Servicios",
   intro:
-    "Forjando arquitecturas digitales que trascienden la mera funcionalidad. Una síntesis de lógica rigurosa y principios estéticos minimalistas, diseñada para la escala y la precisión.",
+    "Producción, edición y postproducción audiovisual. Una síntesis de narrativa rigurosa y estética minimalista, diseñada para que cada pieza comunique con ritmo y precisión.",
   services: [
     {
-      id: "digital-architecture",
+      id: "direccion-fotografia",
       index: "01",
       size: "large",
       icon: "architecture",
-      title: "Arquitectura Digital",
+      title: "Dirección de Fotografía",
       description:
-        "Planos estructurales para ecosistemas digitales complejos. Aseguramos fundamentos escalables, resilientes y lógicos antes de comenzar la ejecución visual.",
+        "Planeación de luz, encuadre y cámara para construir la atmósfera visual de cada escena. Cuidamos la imagen desde el guion hasta el set.",
     },
     {
-      id: "uiux-strategy",
+      id: "edicion-montaje",
       index: "02",
       size: "small",
       icon: "design_services",
-      title: "Estrategia UI/UX",
+      title: "Edición y Montaje",
       description:
-        "Traducimos la intención humana en interfaces sin fricción, guiadas por el concepto de 'Ma'.",
+        "Construcción del ritmo y la narrativa en postproducción, guiada por el concepto del montaje invisible.",
     },
     {
-      id: "creative-tech",
+      id: "color-post",
       index: "03",
       size: "small",
       icon: "terminal",
-      title: "Tecnología Creativa",
+      title: "Color y Postproducción",
       description:
-        "Uniendo código y diseño a través de WebGL, generación procedural e interacciones cinéticas.",
+        "Etalonaje, composición y acabado de imagen para dar coherencia y temperatura a cada proyecto.",
     },
     {
-      id: "brand-systems",
+      id: "motion-graphics",
       index: "04",
       size: "large",
       icon: "brand_awareness",
-      title: "Sistemas de Marca",
+      title: "Motion Graphics",
       description:
-        "Desarrollo de lenguajes de diseño cohesivos y algorítmicos. El rigor tipográfico se une a principios de cuadrícula estrictos para formar identidades digitales inconfundibles.",
+        "Diseño y animación de gráficos en movimiento para títulos, contenido digital y publicidad. La tipografía y la geometría al servicio de la narrativa.",
     },
   ],
   ctaLabel: "Iniciar Proyecto",

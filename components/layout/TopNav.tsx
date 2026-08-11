@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { NavLink } from "@/components/ui/NavLink";
-import { NAV_ITEMS } from "./navigation-content";
+import { NAV_ITEMS, BRAND } from "./navigation-content";
 
 export interface NavItem {
   href: string;
@@ -44,10 +44,10 @@ export function TopNav() {
     <nav className="fixed top-0 left-0 z-50 flex h-[80px] w-full items-center justify-between border-b border-outline-variant bg-background/80 px-margin-mobile py-4 backdrop-blur-md md:px-margin-desktop">
       <Link
         href="/"
-        aria-label="Kenji Sato — Inicio"
+        aria-label={`${BRAND} — Inicio`}
         className="text-headline-sm font-bold tracking-tighter text-on-background"
       >
-        KENJI_SATO
+        {BRAND}
       </Link>
 
       {/* Navegación desktop */}

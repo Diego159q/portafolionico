@@ -1,20 +1,24 @@
-import { EXPERIENCE_CONTENT } from "./experience-content";
+import type { ExperienceContent } from "./experience-content";
 import { Reveal } from "@/components/ui/motion";
+
+interface ExperienceHeaderProps {
+  content: ExperienceContent;
+}
 
 /**
  * Cabecera editorial de "Experiencia".
  * Misma estética que SoftwareHeader/ServicesHeader: eyebrow + display título
  * full-width e intro asimétrica con borde superior estructural.
  */
-export function ExperienceHeader() {
-  const [first, ...rest] = EXPERIENCE_CONTENT.title.split(" ");
+export function ExperienceHeader({ content }: ExperienceHeaderProps) {
+  const [first, ...rest] = content.title.split(" ");
 
   return (
     <header className="mb-[120px] grid grid-cols-4 gap-gutter md:grid-cols-12">
       <div className="col-span-4 md:col-span-12">
         <Reveal>
           <p className="mb-unit font-label-mono text-label-mono uppercase tracking-[0.2em] text-on-surface-variant">
-            {EXPERIENCE_CONTENT.eyebrow}
+            {content.eyebrow}
           </p>
         </Reveal>
         <Reveal delay={0.12}>
@@ -31,7 +35,7 @@ export function ExperienceHeader() {
       <div className="col-span-4 mt-margin-mobile flex flex-col justify-end border-t border-outline-variant pt-unit md:col-span-5 md:col-start-8 md:mt-0">
         <Reveal delay={0.24}>
           <p className="font-body text-body-md text-on-surface-variant">
-            {EXPERIENCE_CONTENT.description}
+            {content.description}
           </p>
         </Reveal>
       </div>
