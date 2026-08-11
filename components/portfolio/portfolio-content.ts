@@ -32,6 +32,8 @@ export interface Project {
   technologies?: string[];
   /** Video opcional: en hover reproduce el clip real (autoplay muted). */
   video?: { src: string; poster: string };
+  /** Formato audiovisual (ej: REEL 9:16, TIKTOK, COBERTURA 4K). */
+  formatTag?: string;
 }
 
 export interface PortfolioFilter {
@@ -75,7 +77,9 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
       image: "/images/portfolio/void-structure.jpg",
       caseStudySlug: "sowa-tattoos",
       size: "large",
+      formatTag: "REEL 9:16",
       technologies: ["Guion", "Grabación", "Edición", "Reels"],
+      video: { src: "/videos/sowa-tattoos.mp4", poster: "/images/portfolio/void-structure.jpg" },
     },
     {
       id: "wankamotors",
@@ -87,7 +91,9 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
         "Videos promocionales de vehículos con mensajes claros y una estética cálida que conecta con compradores locales.",
       image: "/images/portfolio/data-flow.jpg",
       size: "small",
+      formatTag: "PROMO 16:9",
       technologies: ["Video promocional", "Voz en off", "Edición"],
+      video: { src: "/videos/wankamotors.mp4", poster: "/images/portfolio/data-flow.jpg" },
     },
     {
       id: "adidas-la-salle",
@@ -99,7 +105,9 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
         "Video por el Día del Medio Ambiente con guion y voz en off. Contenido institucional con tono humano y claro.",
       image: "/images/portfolio/void-structure.jpg",
       size: "small",
+      formatTag: "INSTITUCIONAL",
       technologies: ["Guion", "Voz en off", "Edición"],
+      video: { src: "/videos/adidas-la-salle.mp4", poster: "/images/portfolio/void-structure.jpg" },
     },
     {
       id: "ryu-store",
@@ -111,7 +119,9 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
         "Video promocional de producto con enfoque cálido, cercano y dinámico para redes sociales.",
       image: "/images/portfolio/data-flow.jpg",
       size: "large",
+      formatTag: "TIKTOK 9:16",
       technologies: ["Video producto", "Edición", "Social media"],
+      video: { src: "/videos/ryu-store.mp4", poster: "/images/portfolio/data-flow.jpg" },
     },
     {
       id: "unimac",
@@ -123,7 +133,9 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
         "Contenido audiovisual para marca comercial: piezas claras, profesionales y con calidez.",
       image: "/images/portfolio/void-structure.jpg",
       size: "small",
+      formatTag: "SOCIAL MEDIA",
       technologies: ["Contenido de marca", "Edición"],
+      video: { src: "/videos/unimac.mp4", poster: "/images/portfolio/void-structure.jpg" },
     },
     {
       id: "recepciones-evento",
@@ -135,7 +147,9 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
         "Cobertura de catering y decoración para cumpleaños con voz en off festiva, sentimental y cálida.",
       image: "/images/portfolio/data-flow.jpg",
       size: "large",
+      formatTag: "COBERTURA 4K",
       technologies: ["Cobertura", "Voz en off", "Eventos"],
+      video: { src: "/videos/recepciones-evento.mp4", poster: "/images/portfolio/data-flow.jpg" },
     },
   ],
   ctaLarge: "Ver Proyecto",
