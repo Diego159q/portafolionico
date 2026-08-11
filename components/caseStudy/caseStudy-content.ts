@@ -83,6 +83,8 @@ export interface CaseStudy {
   /** "02 // INTERACTION STUDY" */
   videoHeading: string;
   videoLabel: string;
+  /** URL de video opcional para el panel de video (YouTube/Vimeo/MP4). Vacío = placeholder. */
+  videoUrl?: string;
   metricsTitle: string;
   metricsIntro: string;
   metrics: CaseMetric[];
@@ -97,7 +99,7 @@ export const CASE_STUDIES_INDEX: string[] = ["sowa-tattoos"];
 const sowaTattoos = {
   id: "sowa-tattoos",
   slug: "sowa-tattoos",
-  category: "architecture",
+  category: "studios",
   year: 2024,
   featured: true,
   technologies: ["Guion", "Grabación", "Edición", "Reels", "TikTok", "Shorts"],

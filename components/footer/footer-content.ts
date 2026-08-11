@@ -1,7 +1,4 @@
-/**
- * Contenido del "Footer" final — Techno-Zen.
- * 100% data-driven, preparado para backend/CMS.
- */
+import { whatsappUrl, SITE_SOCIALS } from "@/components/content/site-content";
 
 export interface FooterNavItem {
   href: string;
@@ -35,12 +32,13 @@ export const FOOTER_CONTENT: FooterContent = {
     { href: "#portfolio", label: "Portfolio" },
     { href: "#studio", label: "Studio" },
     { href: "#services", label: "Servicios" },
+    { href: "#pricing", label: "Tarifas" },
     { href: "#contact", label: "Contacto" },
   ],
   socials: [
-    { id: "whatsapp", label: "WhatsApp", url: "https://wa.me/" },
-    { id: "instagram", label: "Instagram", url: "https://instagram.com/" },
-    { id: "linkedin", label: "LinkedIn", url: "https://linkedin.com/" },
+    { id: "whatsapp", label: "WhatsApp", url: whatsappUrl() },
+    { id: "instagram", label: "Instagram", url: SITE_SOCIALS.instagram },
+    { id: "tiktok", label: "TikTok", url: SITE_SOCIALS.tiktok },
   ],
   tagline:
     "Contenido audiovisual para marcas, eventos y redes sociales con calidez, estrategia y luz propia.",

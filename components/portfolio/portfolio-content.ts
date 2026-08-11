@@ -5,7 +5,7 @@
  * Estructura fiel al screen "Portafolio - Galería Premium Techno-Zen" (Stitch).
  */
 
-export type ProjectCategory = "architecture" | "digital" | "branding";
+export type ProjectCategory = "vehicles" | "brands" | "studios" | "events";
 
 export type ProjectSize = "large" | "small";
 
@@ -30,6 +30,8 @@ export interface Project {
   size: ProjectSize;
   /** Tecnologías usadas (opcional, preparado para el futuro). */
   technologies?: string[];
+  /** Video opcional: en hover reproduce el clip real (autoplay muted). */
+  video?: { src: string; poster: string };
 }
 
 export interface PortfolioFilter {
@@ -51,9 +53,10 @@ export interface PortfolioContent {
 /** Filtros mostrados. "all" agrupa la vista completa. */
 export const PORTFOLIO_FILTERS: PortfolioFilter[] = [
   { id: "all", label: "Todos" },
-  { id: "architecture", label: "Video / Contenido" },
-  { id: "digital", label: "Marcas" },
-  { id: "branding", label: "Eventos" },
+  { id: "vehicles", label: "Vehículos" },
+  { id: "brands", label: "Marcas" },
+  { id: "studios", label: "Estudios / Belleza" },
+  { id: "events", label: "Eventos" },
 ];
 
 export const PORTFOLIO_CONTENT: PortfolioContent = {
@@ -65,32 +68,32 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
       id: "sowa-tattoos",
       slug: "sowa-tattoos",
       title: "SOWA TATTOOS",
-      category: "architecture",
+      category: "studios",
       year: 2024,
       description:
-        "Librería de contenido corto para Reels, TikTok y Shorts. Piezas pensadas para mostrar proceso, detalle y personalidad de marca.",
+        "Librería de contenido corto para Reels, TikTok y Shorts. Piezas pensadas para mostrar proceso, detalle y personalidad de marca. Huancayo, Perú.",
       image: "/images/portfolio/void-structure.jpg",
       caseStudySlug: "sowa-tattoos",
       size: "large",
       technologies: ["Guion", "Grabación", "Edición", "Reels"],
     },
     {
-      id: "ryu-store",
-      slug: "ryu-store",
-      title: "RYU STORE",
-      category: "digital",
-      year: 2023,
+      id: "wankamotors",
+      slug: "wankamotors",
+      title: "WANKAMOTORS",
+      category: "vehicles",
+      year: 2024,
       description:
-        "Video promocional de producto con enfoque cálido, cercano y dinámico para redes sociales.",
+        "Videos promocionales de vehículos con mensajes claros y una estética cálida que conecta con compradores locales.",
       image: "/images/portfolio/data-flow.jpg",
       size: "small",
-      technologies: ["Video producto", "Edición", "Social media"],
+      technologies: ["Video promocional", "Voz en off", "Edición"],
     },
     {
       id: "adidas-la-salle",
       slug: "adidas-la-salle",
       title: "ADIDAS LA SALLE",
-      category: "digital",
+      category: "brands",
       year: 2024,
       description:
         "Video por el Día del Medio Ambiente con guion y voz en off. Contenido institucional con tono humano y claro.",
@@ -99,10 +102,34 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
       technologies: ["Guion", "Voz en off", "Edición"],
     },
     {
+      id: "ryu-store",
+      slug: "ryu-store",
+      title: "RYU STORE",
+      category: "brands",
+      year: 2023,
+      description:
+        "Video promocional de producto con enfoque cálido, cercano y dinámico para redes sociales.",
+      image: "/images/portfolio/data-flow.jpg",
+      size: "large",
+      technologies: ["Video producto", "Edición", "Social media"],
+    },
+    {
+      id: "unimac",
+      slug: "unimac",
+      title: "UNIMAC",
+      category: "brands",
+      year: 2024,
+      description:
+        "Contenido audiovisual para marca comercial: piezas claras, profesionales y con calidez.",
+      image: "/images/portfolio/void-structure.jpg",
+      size: "small",
+      technologies: ["Contenido de marca", "Edición"],
+    },
+    {
       id: "recepciones-evento",
       slug: "recepciones-evento",
       title: "LOCAL RECEPCIONES",
-      category: "branding",
+      category: "events",
       year: 2024,
       description:
         "Cobertura de catering y decoración para cumpleaños con voz en off festiva, sentimental y cálida.",
@@ -116,7 +143,8 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
 };
 
 export const CATEGORY_LABELS: Record<ProjectCategory, string> = {
-  architecture: "Video / Contenido",
-  digital: "Marcas",
-  branding: "Eventos",
+  vehicles: "Vehículos",
+  brands: "Marcas",
+  studios: "Estudios / Belleza",
+  events: "Eventos",
 };

@@ -11,7 +11,11 @@ export function NavLink({ item }: NavLinkProps) {
       href={item.href}
       aria-current={item.active ? "page" : undefined}
       data-active={item.active || undefined}
-      className="text-label-mono text-on-surface-variant cyber-text transition-colors"
+      className={`text-label-mono cyber-text transition-colors ${
+        item.active
+          ? "text-on-tertiary-container"
+          : "text-on-surface-variant"
+      }`}
     >
       {item.label}
     </Link>

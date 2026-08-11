@@ -53,7 +53,7 @@ function ProjectCardInner({
 }) {
   return (
     <>
-        {/* Imagen */}
+        {/* Imagen / video (hover-play) */}
         <div className={`relative mb-6 overflow-hidden ${imageHeight}`}>
           <Image
             src={project.image}
@@ -62,6 +62,18 @@ function ProjectCardInner({
             sizes={large ? "(min-width: 768px) 62vw, 100vw" : "(min-width: 768px) 31vw, 100vw"}
             className="object-cover transition-transform duration-700 will-change-transform grayscale group-hover:scale-105 group-hover:grayscale-0"
           />
+          {project.video ? (
+            <video
+              className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              src={project.video.src}
+              poster={project.video.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="none"
+            />
+          ) : null}
           {/* Overlay crimson suave en hover */}
           <div
             aria-hidden="true"

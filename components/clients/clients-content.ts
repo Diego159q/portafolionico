@@ -2,6 +2,7 @@
  * Contenido de la sección "Clientes" — Techno-Zen.
  * Grid de logos 100% data-driven, preparado para CMS.
  * Logos placeholder reemplazables por PNG/SVG reales (sin dependencias externas).
+ * Marca: NICOLE ORE.
  */
 
 export type ClientCategory =

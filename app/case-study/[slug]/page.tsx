@@ -6,6 +6,8 @@ import {
   listCaseStudySlugs,
 } from "@/components/caseStudy/caseStudy-content";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 /**
  * Ruta dinámica /case-study/[slug].
  * Generación estática: todos los slugs se pre-renderizan (backing de la data).
@@ -26,14 +28,24 @@ export async function generateMetadata({
   if (!study) {
     return { title: "Proyecto no encontrado — NICOLE ORE" };
   }
+  const url = `${SITE_URL}/case-study/${study.slug}`;
   return {
     title: `${study.projectTitle} — Caso de Estudio`,
     description: study.tagline,
+    alternates: { canonical: `/case-study/${study.slug}` },
     openGraph: {
+      title: `${study.projectTitle} — Caso de Estudio | NICOLE ORE`,
+      description: study.tagline,
+      url,
+      type: "article",
+      locale: "es_PE",
+      images: [{ url: study.heroImage.src, alt: study.heroImage.alt }],
+    },
+    twitter: {
+      card: "summary_large_image",
       title: `${study.projectTitle} — Caso de Estudio`,
       description: study.tagline,
-      url: `/case-study/${study.slug}`,
-      images: [{ url: study.heroImage.src, alt: study.heroImage.alt }],
+      images: [study.heroImage.src],
     },
   };
 }

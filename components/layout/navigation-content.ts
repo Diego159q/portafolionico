@@ -19,14 +19,14 @@ export interface NavigationEntry {
 
 /**
  * Navegación final del portafolio audiovisual.
- * WORKS -> #portfolio · STUDIO -> #studio · SERVICES -> #services
- * PROCESS -> #experience · CONTACT -> #contact
+ * TRABAJOS -> #portfolio · ESTUDIO -> #studio · SERVICIOS -> #services
+ * PROCESO -> #process · CONTACTO -> #contact
  */
 export const NAVIGATION: NavigationEntry[] = [
   { label: "TRABAJOS", href: "#portfolio", order: 0 },
   { label: "ESTUDIO", href: "#studio", order: 1 },
   { label: "SERVICIOS", href: "#services", order: 2 },
-  { label: "PROCESO", href: "#experience", order: 3 },
+  { label: "PROCESO", href: "#process", order: 3 },
   { label: "CONTACTO", href: "#contact", order: 4 },
 ];
 

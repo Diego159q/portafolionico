@@ -15,12 +15,34 @@ export interface NavItem {
  * Navegación coherente con las secciones reales de la página de inicio.
  * Los ítems viven en navigation-content.ts (data-driven, preparado para CMS).
  * Los anchors aterrizan en IDs que existen (#portfolio, #studio, #services,
- * #experience, #contact).
+ * #process, #contact). El ítem de la sección visible se resalta (scrollspy).
  */
 
 export function TopNav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState<string>("#portfolio");
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  // Scrollspy: resalta el enlace de la sección actualmente visible.
+  useEffect(() => {
+    const sections = NAV_ITEMS
+      .map((item) => document.getElementById(item.href.slice(1)))
+      .filter((el): el is HTMLElement => Boolean(el));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveHref(`#${entry.target.id}`);
+          }
+        }
+      },
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
 
   // Bloquear teclado: la tecla Escape cierra el menú y devuelve el foco al botón.
   const handleKeyDown = useCallback((event: KeyboardEvent) => {
@@ -53,7 +75,10 @@ export function TopNav() {
       {/* Navegación desktop */}
       <div className="hidden items-center gap-gutter md:flex">
         {NAV_ITEMS.map((item) => (
-          <NavLink key={item.label} item={item} />
+          <NavLink
+            key={item.label}
+            item={{ ...item, active: activeHref === item.href }}
+          />
         ))}
       </div>
 
@@ -97,7 +122,12 @@ export function TopNav() {
               <Link
                 href={item.href}
                 onClick={handleLinkClick}
-                className="block py-4 text-label-mono text-on-surface-variant transition-colors hover:text-on-tertiary-container"
+                aria-current={activeHref === item.href ? "page" : undefined}
+                className={`block py-4 text-label-mono transition-colors hover:text-on-tertiary-container ${
+                  activeHref === item.href
+                    ? "text-on-tertiary-container"
+                    : "text-on-surface-variant"
+                }`}
               >
                 {item.label}
               </Link>

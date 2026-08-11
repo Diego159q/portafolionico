@@ -2,9 +2,11 @@ import { Hero } from "@/components/hero/Hero";
 import { Reel } from "@/components/reel/Reel";
 import { Studio } from "@/components/studio/Studio";
 import { Services } from "@/components/services/Services";
+import { Pricing } from "@/components/pricing/Pricing";
 import { Software } from "@/components/software/Software";
 import { Portfolio } from "@/components/portfolio/Portfolio";
 import { CaseStudyPreview } from "@/components/caseStudyPreview/CaseStudyPreview";
+import { Process } from "@/components/process/Process";
 import { Experience } from "@/components/experience/Experience";
 import { Education } from "@/components/education/Education";
 import { Clients } from "@/components/clients/Clients";
@@ -20,9 +22,11 @@ export default function HomePage() {
       <Reel />
       <Studio />
       <Services />
+      <Pricing />
       <Software />
       <Portfolio />
       <CaseStudyPreview />
+      <Process />
       <Experience />
       <Education />
       <Clients />

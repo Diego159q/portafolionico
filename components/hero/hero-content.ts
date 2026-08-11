@@ -1,6 +1,6 @@
 /**
  * Contenido de la sección "Hero" — Techno-Zen.
- * 100% data-driven (patrón *-content.ts del proyecto). Placeholder audiovisual.
+ * 100% data-driven (patrón *-content.ts del proyecto). Marca NICOLE ORE.
  */
 
 export interface HeroContentType {

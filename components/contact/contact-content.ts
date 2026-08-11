@@ -30,6 +30,8 @@ export interface ContactContent {
   };
 }
 
+import { whatsappUrl, SITE_SOCIALS } from "@/components/content/site-content";
+
 export const CONTACT_CONTENT: ContactContent = {
   eyebrow: "Contacto",
   title: "Contacto",
@@ -38,9 +40,9 @@ export const CONTACT_CONTENT: ContactContent = {
     "¿Tienes una marca, un evento o una idea en mente? Escríbeme y hagámoslo brillar con calidez y luz propia.",
   email: "hola@nicoleore.com",
   socials: [
-    { id: "instagram", label: "Instagram", url: "https://instagram.com/" },
-    { id: "whatsapp", label: "WhatsApp", url: "https://wa.me/" },
-    { id: "tiktok", label: "TikTok", url: "https://tiktok.com/" },
+    { id: "instagram", label: "Instagram", url: SITE_SOCIALS.instagram },
+    { id: "whatsapp", label: "WhatsApp", url: whatsappUrl() },
+    { id: "tiktok", label: "TikTok", url: SITE_SOCIALS.tiktok },
   ],
   form: {
     submitLabel: "Enviar mensaje",

@@ -1,6 +1,6 @@
-# ARQUITECTURA FRONTEND — "Techno-Zen" Portfolio de Kenji Sato
+# ARQUITECTURA FRONTEND — "Techno-Zen" Portfolio de NICOLE ORE
 
-Proyecto de origen: **Modern Japanese Design System** (Stitch, `projects/12221940429951400780`).
+Proyecto de origen: **Modern Japanese Design System** (Stitch).
 
 Documento de arquitectura del frontend derivado del análisis completo del design system
 "Techno-Zen" y de las pantallas reales generadas (HTML/CSS + Tailwind config exportado).
@@ -9,7 +9,7 @@ Documento de arquitectura del frontend derivado del análisis completo del desig
 
 ## 1. Resumen ejecutivo
 
-Portafolio premium de un diseñador/arquitecto de experiencia (`KENJI SATO`). Es una
+Portafolio premium de un diseñador/arquitecto de experiencia (`NICOLE ORE`). Es una
 **Aplicación de una Página (SPA conceptual) compuesta por secciones de una sola columna**
 con navegación fija y transiciones de scroll. El concepto visual **"Techno-Zen"** fusiona el
 minimalismo japonés (*Ma* / el vacío como elemento estructural) con una estética tecnológica
