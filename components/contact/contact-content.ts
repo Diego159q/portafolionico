@@ -1,7 +1,7 @@
 /**
  * Contenido de la sección "Contacto" — Techno-Zen.
  * 100% data-driven, preparado para backend/CMS.
- * Email y redes sociales placeholder. Formulario sin conectar a servicios externos.
+ * Email y redes sociales por confirmar. Formulario conectado a Supabase (Server Action).
  */
 
 export interface SocialLink {
@@ -35,12 +35,12 @@ export const CONTACT_CONTENT: ContactContent = {
   title: "Contacto",
   heading: "Trabajemos",
   description:
-    "¿Tienes un proyecto audiovisual en mente? Escríbeme y hablemos de ritmo, imagen y narrativa.",
-  email: "hola@tuportafolio.com",
+    "¿Tienes una marca, un evento o una idea en mente? Escríbeme y hagámoslo brillar con calidez y luz propia.",
+  email: "hola@nicoleore.com",
   socials: [
-    { id: "vimeo", label: "Vimeo", url: "https://vimeo.com/" },
     { id: "instagram", label: "Instagram", url: "https://instagram.com/" },
-    { id: "linkedin", label: "LinkedIn", url: "https://linkedin.com/" },
+    { id: "whatsapp", label: "WhatsApp", url: "https://wa.me/" },
+    { id: "tiktok", label: "TikTok", url: "https://tiktok.com/" },
   ],
   form: {
     submitLabel: "Enviar mensaje",

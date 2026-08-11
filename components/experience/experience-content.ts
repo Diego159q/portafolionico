@@ -32,34 +32,34 @@ export const EXPERIENCE_CONTENT: ExperienceContent = {
   title: "Experiencia",
   heading: "Recorrido Profesional",
   description:
-    "Una cronologia de trabajo en produccion, edicion y postproduccion audiovisual. Cada etapa construyo la sensibilidad de ritmo e imagen con la que hoy abordo cada pieza.",
+    "Creación de contenido audiovisual para marcas y eventos desde 2024. Cada proyecto combina estrategia, calidez y producción para que tu marca se vea cercana y memorable.",
   items: [
     {
       id: "exp-01",
-      role: "Editora y Postproductora",
-      company: "Estudio Audiovisual Placeholder",
-      period: "2023 — Presente",
+      role: "Creadora de Contenido Audiovisual",
+      company: "Freelance — Redes Sociales",
+      period: "2024 — Presente",
       description:
-        "Montaje y postproduccion de piezas de marca, documental breve y contenido digital multiplataforma.",
-      projects: ["Spot placeholder 03", "Serie documental 07"],
+        "Producción integral de contenido para Reels, TikTok y Shorts: guion, grabación, edición y voz en off para marcas y negocios.",
+      projects: ["Reels para marcas", "Contenido de producto"],
     },
     {
       id: "exp-02",
-      role: "Motion & VFX Lead",
-      company: "Productora Independente Placeholder",
-      period: "2021 — 2023",
+      role: "Videos Promocionales y de Marca",
+      company: "Wankamotors · Unimac · Sowa Tattoos",
+      period: "2024 — Presente",
       description:
-        "Direccion de motion graphics, composicion y acabado de color para contenido publicitario y cinematografico.",
-      projects: ["Campana 02", "Videoclip 05"],
+        "Videos promocionales para vehículos, marcas comerciales y estudios: mensajes claros, estética cálida y enfoque en el detalle.",
+      projects: ["Video vehículos Wankamotors", "Contenido Sowa Tattoos"],
     },
     {
       id: "exp-03",
-      role: "Asistente de Direccion y Fotografia",
-      company: "Estudio Audiovisual Placeholder",
-      period: "2019 — 2021",
+      role: "Cobertura de Eventos",
+      company: "Fiestas, Cumpleaños y Recepciones",
+      period: "2024 — Presente",
       description:
-        "Apoyo en rodaje, directa de fotografia, luz y continuidad en cortometrajes y piezas corporativas.",
-      projects: ["Corto 01", "Editorial 04"],
+        "Registro audiovisual de cafeterías, locales de recepciones y celebraciones con voz en off festiva y sentimental.",
+      projects: ["Local Recepciones", "Cobertura catering"],
     },
   ],
 };

@@ -11,7 +11,7 @@ export function Services() {
   return (
     <section
       id="services"
-      aria-label="Servicios — NICO"
+      aria-label="Servicios — NICOLE ORE"
       className="relative bg-background px-margin-mobile pb-section-gap md:px-margin-desktop"
     >
       <ServicesHeader />

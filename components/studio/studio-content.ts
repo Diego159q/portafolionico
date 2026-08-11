@@ -35,41 +35,41 @@ export interface StudioContent {
 export const STUDIO_CONTENT: StudioContent = {
   eyebrow: "Trayectoria Profesional",
   statement:
-    "Cine, edición y dirección de fotografía con sensibilidad narrativa y precisión técnica.",
+    "Contenido audiovisual para marcas que buscan verse cercanas, cálidas y memorables.",
   quote:
-    "La imagen es lenguaje. Cada plano, cada corte y cada luz sostienen el ritmo de la historia. Mi práctica busca eliminar lo superfluo para que la intención de cada pieza se revele con claridad.",
+    "No solo grabo: pienso la estrategia detrás de cada video. Combino negocios, marketing y producción creativa para construir piezas que se sienten humanas, luminosas y listas para redes.",
   disciplinesTitle: "Disciplinas Principales",
   valuesLabel: "Valores",
   specialties: {
     label: "Especialidades",
     arrow: true,
     items: [
-      "Dirección de Fotografía",
-      "Edición y Montaje",
-      "Producción Audiovisual",
+      "Contenido para Marcas",
+      "Reels / TikTok / Shorts",
+      "Cobertura de Eventos",
     ],
   },
   skills: {
     label: "Habilidades",
     items: [
-      "Etalonaje y Color",
-      "Diseño Sonoro",
-      "Motion Graphics",
-      "Contenido Digital",
+      "Guion y Voz en Off",
+      "Grabación y Edición",
+      "Marketing de Contenidos",
+      "Estética Cozy / Cálida",
     ],
   },
   values: [
-    { index: "01", label: "Ritmo" },
-    { index: "02", label: "Intencionalidad" },
-    { index: "03", label: "Silencio" },
-    { index: "04", label: "Precisión" },
+    { index: "01", label: "Calidez" },
+    { index: "02", label: "Cercanía" },
+    { index: "03", label: "Autenticidad" },
+    { index: "04", label: "Creatividad" },
   ],
 };
 
 /** Imagen del estudio (descargada de Stitch, /public/images/studio). */
 export const STUDIO_IMAGE = {
   src: "/images/studio/studio-workspace.jpg",
-  alt: "Estudio de trabajo en blanco y negro, estilo techno-zen, con equipos de postproducción.",
+  alt: "Espacio de producción audiovisual con estética cálida y enfoque de contenido.",
   /** Width/height del asset original (1408x768), para next/image. */
   width: 1408,
   height: 768,

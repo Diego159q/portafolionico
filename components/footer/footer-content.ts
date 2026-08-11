@@ -30,7 +30,7 @@ export interface FooterContent {
 }
 
 export const FOOTER_CONTENT: FooterContent = {
-  brand: "NICO",
+  brand: "NICOLE ORE",
   nav: [
     { href: "#portfolio", label: "Portfolio" },
     { href: "#studio", label: "Studio" },
@@ -38,13 +38,13 @@ export const FOOTER_CONTENT: FooterContent = {
     { href: "#contact", label: "Contacto" },
   ],
   socials: [
-    { id: "vimeo", label: "Vimeo", url: "https://vimeo.com/" },
+    { id: "whatsapp", label: "WhatsApp", url: "https://wa.me/" },
     { id: "instagram", label: "Instagram", url: "https://instagram.com/" },
     { id: "linkedin", label: "LinkedIn", url: "https://linkedin.com/" },
   ],
   tagline:
-    "Dirección de fotografía, edición y postproducción audiovisual con foco en el ritmo y la imagen.",
-  copyright: "© 2026 NICO. Todos los derechos reservados.",
+    "Contenido audiovisual para marcas, eventos y redes sociales con calidez, estrategia y luz propia.",
+  copyright: "© 2026 NICOLE ORE. Todos los derechos reservados.",
   legal: [
     { href: "/legal/privacy", label: "Privacidad" },
     { href: "/legal/terms", label: "Términos" },

@@ -20,16 +20,16 @@ export interface HeroContentType {
 }
 
 export const HERO_CONTENT: HeroContentType = {
-  eyebrow: "DIRECTORA DE FOTOGRAFÍA & EDITORA",
-  brand: "NICO",
-  ariaLabel: "Introducción — NICO",
-  tagline: "NARRATIVA, RITMO Y LUZ.",
+  eyebrow: "CREADORA DE CONTENIDO AUDIOVISUAL",
+  brand: "NICOLE ORE",
+  ariaLabel: "Introducción — NICOLE ORE",
+  tagline: "CONTENIDO CON CALIDEZ Y LUZ PROPIA.",
   visual: {
     src: "/images/profile/hero-portrait.jpg",
-    alt: "Retrato placeholder de NICO en un ambiente minimalista techno-zen.",
+    alt: "Retrato placeholder de Nicole Ore en un ambiente cálido y audiovisual.",
   },
   cta: {
     primary: { label: "VER PORTFOLIO", href: "#portfolio" },
-    secondary: { label: "EXPLORAR SERVICIOS", href: "#services" },
+    secondary: { label: "TRABAJEMOS JUNTAS", href: "#contact" },
   },
 };

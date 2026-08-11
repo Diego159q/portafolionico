@@ -33,27 +33,25 @@ export interface ClientContent {
 export const CLIENT_CATEGORY_LABELS: Record<ClientCategory, string> = {
   branding: "Marca",
   production: "Producción",
-  editorial: "Editorial",
-  digital: "Digital",
+  editorial: "Eventos",
+  digital: "Redes",
 };
 
-const logo = { src: "/images/clients/placeholder.jpg", alt: "Logo placeholder del cliente" };
+const logo = { src: "/images/clients/placeholder.jpg", alt: "Logo placeholder de la marca" };
 
 export const CLIENTS_CONTENT: ClientContent = {
   eyebrow: "Clientes",
   title: "Marcas",
-  heading: "Marca",
+  heading: "Marcas",
   description:
-    "Una seleccion de marcas y productoras con las que he colaborado en campana, contenido editorial y piezas audiovisuales. Logos de ejemplo.",
+    "Marcas y negocios locales que confían en mi contenido audiovisual: con calidez, estrategia y luz propia.",
   categories: ["branding", "production", "editorial", "digital"],
   items: [
-    { id: "cl-01", name: "Marca Uno Placeholder", categoryId: "branding", year: 2024, logo },
-    { id: "cl-02", name: "Productora Hello", categoryId: "production", year: 2023, logo },
-    { id: "cl-03", name: "Revista Void", categoryId: "editorial", year: 2023, logo },
-    { id: "cl-04", name: "Beta Digital", categoryId: "digital", year: 2022, logo },
-    { id: "cl-05", name: "Plaza Media", categoryId: "production", year: 2022, logo },
-    { id: "cl-06", name: "Studio Norte", categoryId: "branding", year: 2021, logo },
-    { id: "cl-07", name: "Focus Lab", categoryId: "digital", year: 2021, logo },
-    { id: "cl-08", name: "Tinta Content", categoryId: "editorial", year: 2020, logo },
+    { id: "cl-01", name: "Wankamotors", categoryId: "branding", year: 2024, logo },
+    { id: "cl-02", name: "Unimac", categoryId: "production", year: 2024, logo },
+    { id: "cl-03", name: "Sowa Tattoos", categoryId: "digital", year: 2024, logo },
+    { id: "cl-04", name: "RYU Store", categoryId: "branding", year: 2024, logo },
+    { id: "cl-05", name: "Adidas La Salle", categoryId: "production", year: 2024, logo },
+    { id: "cl-06", name: "Local Recepciones", categoryId: "editorial", year: 2024, logo },
   ],
 };

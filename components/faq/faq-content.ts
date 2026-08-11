@@ -26,35 +26,35 @@ export const FAQ_CONTENT: FaqContent = {
   title: "Preguntas",
   heading: "Preguntas Frecuentes",
   description:
-    "Respuestas a las dudas más habituales sobre producción, plazos, formatos y colaboracion.",
+    "Respuestas a las dudas más habituales sobre producción de contenido, plazos, formatos y colaboración.",
   items: [
     {
       id: "faq-01",
       order: 1,
       question: "¿En qué formatos y plataformas trabajas?",
       answer:
-        "Trabajo desde piezas para redes sociales y contenido digital hasta largometraje, documental y publicidad. El entregable se adapta al medio.",
+        "Produzco contenido para Reels, TikTok y Shorts, además de videos promocionales para marcas, cumplen mejor con lo que tu negocio necesita.",
     },
     {
       id: "faq-02",
       order: 2,
-      question: "¿Cuál es el tiempo estimado de entrega?",
+      question: "¿Cuánto tiempo toma un proyecto?",
       answer:
-        "Depende del alcance y la plataforma. Un spot suele requerir de 2 a 4 semanas y un documental de 4 a 8. Lo acordamos todo antes de empezar.",
+        "Depende del alcance. Un Reel o video corto suele estar listo en pocos días y un proyecto completo de marca de 1 a 2 semanas. Lo acordamos todo antes de empezar.",
     },
     {
       id: "faq-03",
       order: 3,
-      question: "¿Trabajas con clientes remotos?",
+      question: "¿Trabajas con clientes de otras ciudades?",
       answer:
-        "Sí. Colaboro de forma remota con productoras, agencias y marcas en todo el mundo, coordinando procesos por medios digitales.",
+        "Sí. Coordino guiones e ideas por mensaje y videollamada; si la grabación es presencial y yo no puedo trasladarme, el cliente me envía el material y me encargo de la línea creativa y la edición.",
     },
     {
       id: "faq-04",
       order: 4,
-      question: "¿Entregas los archivos de proyecto editables?",
+      question: "¿Qué necesito para empezar?",
       answer:
-        "Sí. Puedo entregar proyectos editables para que el equipo continúe la postproduccion, ademas de los entregables finales en alta calidad.",
+        "Solo contarme tu idea o tu marca. Yo me encargo del guion, la grabación (si es en Huancayo), la voz en off y la edición final lista para publicar.",
     },
   ],
 };

@@ -17,26 +17,26 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NICO — Portafolio Audiovisual",
+  title: "NICOLE ORE — Portafolio Audiovisual",
   description:
-    "Dirección de fotografía, edición y postproducción audiovisual. Narrativa, ritmo y luz.",
+    "Creadora de contenido audiovisual para marcas, eventos y redes sociales. Contenido con calidez y luz propia.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
-    siteName: "NICO",
-    title: "NICO — Portafolio Audiovisual",
+    siteName: "NICOLE ORE",
+    title: "NICOLE ORE — Portafolio Audiovisual",
     description:
-      "Dirección de fotografía, edición y postproducción audiovisual. Narrativa, ritmo y luz.",
+      "Creadora de contenido audiovisual para marcas, eventos y redes sociales. Contenido con calidez y luz propia.",
     url: SITE_URL,
     images: [
-      { url: "/images/profile/hero-portrait.jpg", width: 1200, height: 630, alt: "NICO — Portafolio Audiovisual" },
+      { url: "/images/profile/hero-portrait.jpg", width: 1200, height: 630, alt: "NICOLE ORE — Portafolio Audiovisual" },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NICO — Portafolio Audiovisual",
+    title: "NICOLE ORE — Portafolio Audiovisual",
     description:
-      "Dirección de fotografía, edición y postproducción audiovisual. Narrativa, ritmo y luz.",
+      "Creadora de contenido audiovisual para marcas, eventos y redes sociales. Contenido con calidez y luz propia.",
     images: ["/images/profile/hero-portrait.jpg"],
   },
 };

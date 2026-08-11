@@ -51,9 +51,9 @@ export interface PortfolioContent {
 /** Filtros mostrados. "all" agrupa la vista completa. */
 export const PORTFOLIO_FILTERS: PortfolioFilter[] = [
   { id: "all", label: "Todos" },
-  { id: "architecture", label: "Ficción" },
-  { id: "digital", label: "Digital" },
-  { id: "branding", label: "Comercial" },
+  { id: "architecture", label: "Video / Contenido" },
+  { id: "digital", label: "Marcas" },
+  { id: "branding", label: "Eventos" },
 ];
 
 export const PORTFOLIO_CONTENT: PortfolioContent = {
@@ -62,29 +62,53 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
   filters: PORTFOLIO_FILTERS,
   projects: [
     {
-      id: "short-film-01",
-      slug: "short-film-01",
-      title: "LUMEN_01",
-      category: "digital",
+      id: "sowa-tattoos",
+      slug: "sowa-tattoos",
+      title: "SOWA TATTOOS",
+      category: "architecture",
       year: 2024,
       description:
-        "Cortometraje de ficción: luz y encuadre como material narrativo. Dirección de fotografía y montaje de una historia minimalista.",
+        "Librería de contenido corto para Reels, TikTok y Shorts. Piezas pensadas para mostrar proceso, detalle y personalidad de marca.",
       image: "/images/portfolio/void-structure.jpg",
-      caseStudySlug: "lumen-01",
+      caseStudySlug: "sowa-tattoos",
       size: "large",
-      technologies: ["Sony Cinema", "DaVinci Resolve", "Premiere"],
+      technologies: ["Guion", "Grabación", "Edición", "Reels"],
     },
     {
-      id: "music-video-01",
-      slug: "music-video-01",
-      title: "SIGNAL_04",
+      id: "ryu-store",
+      slug: "ryu-store",
+      title: "RYU STORE",
       category: "digital",
       year: 2023,
       description:
-        "Videoclip de alta energía: ritmo de corte, color radical y motion graphics integrados en la imagen.",
+        "Video promocional de producto con enfoque cálido, cercano y dinámico para redes sociales.",
       image: "/images/portfolio/data-flow.jpg",
       size: "small",
-      technologies: ["After Effects", "DaVinci Resolve"],
+      technologies: ["Video producto", "Edición", "Social media"],
+    },
+    {
+      id: "adidas-la-salle",
+      slug: "adidas-la-salle",
+      title: "ADIDAS LA SALLE",
+      category: "digital",
+      year: 2024,
+      description:
+        "Video por el Día del Medio Ambiente con guion y voz en off. Contenido institucional con tono humano y claro.",
+      image: "/images/portfolio/void-structure.jpg",
+      size: "small",
+      technologies: ["Guion", "Voz en off", "Edición"],
+    },
+    {
+      id: "recepciones-evento",
+      slug: "recepciones-evento",
+      title: "LOCAL RECEPCIONES",
+      category: "branding",
+      year: 2024,
+      description:
+        "Cobertura de catering y decoración para cumpleaños con voz en off festiva, sentimental y cálida.",
+      image: "/images/portfolio/data-flow.jpg",
+      size: "large",
+      technologies: ["Cobertura", "Voz en off", "Eventos"],
     },
   ],
   ctaLarge: "Ver Proyecto",
@@ -92,7 +116,7 @@ export const PORTFOLIO_CONTENT: PortfolioContent = {
 };
 
 export const CATEGORY_LABELS: Record<ProjectCategory, string> = {
-  architecture: "Ficción",
-  digital: "Digital",
-  branding: "Comercial",
+  architecture: "Video / Contenido",
+  digital: "Marcas",
+  branding: "Eventos",
 };

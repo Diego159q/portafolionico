@@ -34,33 +34,33 @@ export const TESTIMONIALS_CONTENT: TestimonialsContent = {
   title: "Testimonios",
   heading: "Cita",
   description:
-    "Las palabras de productoras, directores y marcas que han confiado en mi trabajo audiovisual.",
+    "Las palabras de marcas y negocios locales que han confiado en mi contenido audiovisual.",
   items: [
     {
       id: "ts-01",
       quote:
-        "Su ojo para el ritmo y el color llevó la pieza a un nivel que no habíamos imaginado. El resultado habló por si solo.",
-      author: "Nombre Apellido Placeholder",
-      role: "Directora de Fotografía",
-      company: "Productora Citric",
+        "Nicole le dio a nuestro contenido la calidez que buscábamos. Reels claros, cercanos y con un acabado súper profesional.",
+      author: "Marca Wankamotors",
+      role: "Cliente — Vehículos",
+      company: "Wankamotors",
       avatar: avatar,
     },
     {
       id: "ts-02",
       quote:
-        "Rápida, precisa y con una sensibilidad enorme para la narración. Nuestras campañas nunca lucieron tan bien.",
-      author: "Nombre Apellido Placeholder",
-      role: "Productor Ejecutivo",
-      company: "Estudio Kyoto",
+        "Su trabajo con los videos promocionales fue impecable: entendió el mensaje y lo convirtió en una pieza que se siente humana y cercana.",
+      author: "Sowa Tattoos",
+      role: "Cliente — Estudio",
+      company: "Sowa Tattoos",
       avatar: avatar,
     },
     {
       id: "ts-03",
       quote:
-        "Del guion a la postproducción, cada decisión tuvo propósito. Una colaboración impecable de principio a fin.",
-      author: "Nombre Apellido Placeholder",
-      role: "Directora de Marca",
-      company: "Agencia Kuro",
+        "La voz en off y la edición elevaron la cobertura de nuestro evento. El video quedó sentimental, cálido y perfecto para redes.",
+      author: "Local Recepciones",
+      role: "Cliente — Eventos",
+      company: "Local Recepciones",
       avatar: avatar,
     },
   ],

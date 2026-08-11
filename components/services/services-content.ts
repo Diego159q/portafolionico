@@ -38,44 +38,44 @@ export const SERVICES_CONTENT: ServicesContent = {
   eyebrow: "Ofertas",
   title: "Servicios",
   intro:
-    "Producción, edición y postproducción audiovisual. Una síntesis de narrativa rigurosa y estética minimalista, diseñada para que cada pieza comunique con ritmo y precisión.",
+    "Producción de contenido para marcas, eventos y redes sociales. Desde la idea y el guion hasta la voz en off, la grabación y la edición final.",
   services: [
     {
-      id: "direccion-fotografia",
+      id: "video-redes",
       index: "01",
       size: "large",
       icon: "architecture",
-      title: "Dirección de Fotografía",
+      title: "Video para Redes",
       description:
-        "Planeación de luz, encuadre y cámara para construir la atmósfera visual de cada escena. Cuidamos la imagen desde el guion hasta el set.",
+        "Producción de Reels, TikTok y Shorts para marcas que quieren conectar con una audiencia real sin perder calidad visual.",
     },
     {
-      id: "edicion-montaje",
+      id: "guion-voz",
       index: "02",
       size: "small",
       icon: "design_services",
-      title: "Edición y Montaje",
+      title: "Guion y Voz en Off",
       description:
-        "Construcción del ritmo y la narrativa en postproducción, guiada por el concepto del montaje invisible.",
+        "Construcción de mensajes claros, cálidos y estratégicos para videos promocionales, eventos y contenido social.",
     },
     {
-      id: "color-post",
+      id: "eventos",
       index: "03",
       size: "small",
       icon: "terminal",
-      title: "Color y Postproducción",
+      title: "Cobertura de Eventos",
       description:
-        "Etalonaje, composición y acabado de imagen para dar coherencia y temperatura a cada proyecto.",
+        "Registro audiovisual para fiestas, celebraciones, activaciones y momentos de marca con una mirada cercana.",
     },
     {
-      id: "motion-graphics",
+      id: "contenido-marca",
       index: "04",
       size: "large",
       icon: "brand_awareness",
-      title: "Motion Graphics",
+      title: "Contenido de Marca",
       description:
-        "Diseño y animación de gráficos en movimiento para títulos, contenido digital y publicidad. La tipografía y la geometría al servicio de la narrativa.",
+        "Videos promocionales para belleza, clínicas, vehículos, inmobiliarias y negocios que necesitan verse profesionales sin sentirse fríos.",
     },
   ],
-  ctaLabel: "Iniciar Proyecto",
+  ctaLabel: "Trabajemos Juntas",
 };

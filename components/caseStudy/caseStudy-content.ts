@@ -92,89 +92,88 @@ export interface CaseStudy {
 }
 
 /** Lista y orden de slugs disponibles (permite enumerar proyectos). */
-export const CASE_STUDIES_INDEX: string[] = ["lumen-01"];
+export const CASE_STUDIES_INDEX: string[] = ["sowa-tattoos"];
 
-const lumen = {
-  id: "lumen-01",
-  slug: "lumen-01",
+const sowaTattoos = {
+  id: "sowa-tattoos",
+  slug: "sowa-tattoos",
   category: "architecture",
   year: 2024,
   featured: true,
-  technologies: ["Sony Cinema", "DaVinci Resolve", "Premiere Pro", "Lighting"],
-  repository: "https://github.com/nico-audiovisual/lumen",
-  demoUrl: "https://vimeo.com/lumen01",
-  projectTitle: "LUMEN_01",
-  client: "Cliente: Productora Placeholder",
+  technologies: ["Guion", "Grabación", "Edición", "Reels", "TikTok", "Shorts"],
+  demoUrl: "https://instagram.com/",
+  projectTitle: "SOWA TATTOOS",
+  client: "Cliente: Sowa Tattoos (Huancayo)",
   tagline:
-    "Un cortometraje de ficción donde la luz y el encuadre actúan como materiales narrativos primarios.",
+    "Una librería de contenido corto para mostrar proceso, detalle y personalidad de marca en redes sociales.",
   heroImage: {
     src: "/images/case-study/hero-brutalist.jpg",
-    alt: "Escena en alto contraste — luz atravesando geometrías",
+    alt: "Detalle visual en alto contraste para contenido corto de tatuajes",
     treatment: "grayscale",
     height: "90vh",
   },
   roles: [
-    { label: "Disciplina", values: ["Dirección de Fotografía", "Edición"] },
-    { label: "Equipo", values: ["Cámara Sony", "Iluminación"] },
-    { label: "Cronología", values: ["2023 T4 - 2024 T1"] },
-    { label: "Estado", values: ["Estrenado"] },
+    { label: "Disciplina", values: ["Contenido para redes", "Grabación y edición"] },
+    { label: "Formatos", values: ["Reels", "TikTok", "Shorts"] },
+    { label: "Cronología", values: ["2024"] },
+    { label: "Estado", values: ["Publicado"] },
   ],
-  editorialHeading: "La Luz como Estructura",
+  editorialHeading: "Una Marca Vista de Cerca",
   editorialParagraphs: [
-    "La filosofía central del proyecto fue tratar la luz no como una simple iluminación, sino como un elemento estructural primario. Partiendo del concepto de vacío escénico, construimos una imagen que respira y deja que la emoción exista sin saturar al espectador.",
-    "Manteniendo una paleta monocromática puntuada solo por el calor del atardecer, el ruido visual se redujo al mínimo. El resultado se siente menos como una pieza producida y más como una extensión física del espacio que habita.",
+    "El objetivo fue construir una biblioteca de piezas cortas que mostraran el trabajo de Sowa Tattoos sin sentirse como publicidad fría. La prioridad fue capturar proceso, textura, manos, detalles y momentos reales del estudio.",
+    "Desde la planificación del guion visual hasta la edición final, el contenido se pensó para funcionar en redes: clips claros, ritmo rápido, estética cálida y mensajes fáciles de entender en pocos segundos.",
   ],
-  quote: "La precisión en la ejecución exige la eliminación despiadada de lo no esencial.",
-  processHeading: "01 // PROCESO Y STORYBOARD",
+  quote: "Cada marca tiene una historia. Mi trabajo es encontrar la luz adecuada para grabarla.",
+  processHeading: "01 // PROCESO DE CONTENIDO",
   figures: [
     {
       src: "/images/case-study/fig-wireframes.jpg",
-      alt: "Storyboard de los planos principales sobre esquema de luces",
-      caption: "FIG. 1 / STORYBOARD",
+      alt: "Planificación de tomas y guion visual para contenido corto",
+      caption: "FIG. 1 / GUION VISUAL",
     },
     {
       src: "/images/case-study/fig-volumes.jpg",
-      alt: "Croquis de volumen y encuadre de la locación",
-      caption: "FIG. 2 / ENCUADRES",
+      alt: "Captura de detalles, proceso y textura durante la grabación",
+      caption: "FIG. 2 / GRABACIÓN",
     },
     {
       src: "/images/case-study/fig-logic.jpg",
-      alt: "Línea de tiempo de edición en software minimalista",
-      caption: "FIG. 3 / MONTAJE",
+      alt: "Línea de tiempo de edición para versiones verticales de redes",
+      caption: "FIG. 3 / EDICIÓN",
     },
   ],
-  videoHeading: "02 // ESTUDIO DE IMAGEN",
-  videoLabel: "REC_01_LUMEN",
+  videoHeading: "02 // PIEZAS PARA REDES",
+  videoLabel: "REC_01_SOWA",
   metricsTitle: "MÉTRICAS DE IMPACTO",
   metricsIntro:
-    "Resultados de producción y montaje del cortometraje tras su estreno.",
+    "Métricas placeholder para dejar el caso listo cuando lleguen resultados reales.",
   metrics: [
-    { value: "9", label: "Días de rodaje", accent: "crimson" },
-    { value: "4K", label: "Resolución de imagen", accent: "neutral" },
-    { value: "12", label: "Minutos de duración", accent: "neutral" },
-    { value: "0", label: "Elementos superfluos", accent: "crimson" },
+    { value: "12", label: "Piezas cortas planificadas", accent: "crimson" },
+    { value: "3", label: "Formatos de redes", accent: "neutral" },
+    { value: "1", label: "Sesión de grabación", accent: "neutral" },
+    { value: "0", label: "Plantillas genéricas", accent: "crimson" },
   ],
-  finalHeading: "03 // IMÁGENES FINALES",
+  finalHeading: "03 // ENTREGABLES FINALES",
   finals: [
     {
       src: "/images/case-study/exec-portrait.jpg",
-      alt: "Retrato de la realizadora en locación minimalista",
+      alt: "Retrato placeholder de Nicole Ore durante una producción audiovisual",
       treatment: "grayscale",
       height: "80vh",
     },
     {
       src: "/images/case-study/exec-interface.jpg",
-      alt: "Imagen del cortometraje proyectada sobre un muro",
+      alt: "Preview de contenido vertical para redes sociales",
       treatment: "color",
       height: "80vh",
     },
   ],
-  next: { title: "SIGNAL_04", slug: "signal-04" },
+  next: { title: "RYU STORE", slug: "ryu-store" },
 } satisfies CaseStudy;
 
 /** Base de datos local de case studies (equivalente a una API determinística). */
 export const caseStudies: Record<string, CaseStudy> = {
-  [lumen.id]: lumen,
+  [sowaTattoos.id]: sowaTattoos,
 };
 
 /** Acceso tipado e idempotente (proxy del backend). */
